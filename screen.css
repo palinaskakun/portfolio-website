@@ -3,13 +3,14 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
+    background-color: transparent;
     text-align: center;
     padding: 10px;
     z-index: 1000; 
@@ -17,12 +18,19 @@ header {
 
 body {
     background-color: black;
+}
+
+body.with-padding {
     padding-top: 60px;
+}
+
+body.without-padding {
+    padding-top: 0;
 }
 
 
 h1 {
-    font-size: 10vw;
+    font-size: 9vw;
     color:white;
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
@@ -45,7 +53,7 @@ nav a {
     text-decoration: none;
     font-family: 'League Spartan', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 2.5vw;
     color: white;
     margin: 0 10px;
     transition: color 0.3s;
@@ -64,22 +72,32 @@ nav a:hover {
 }
 
 .main-circular-image {
-    width: 30%;  
+    width: 25%;  
     height: 30%; 
     border-radius: 35%; /*circular shape*/
     object-fit: cover; 
 }
 
 .content-text {
-    width: 30%;
+    width: 25%;
     color: white;
     font-family: AvenirNext-Regular,sans-serif;
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 
+
 h2 {
-   
     color: white;
+    font-size: 5vw;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 200;
+
 }
 
 p {
@@ -90,35 +108,12 @@ p {
     font-size: 20px;
 }
 
-/* .s1 {
-    background-color: rgb(0, 0, 0);
-}
-
-.s2 {
-    background-color: rgb(30, 30, 30);
-}
-
-.s3 {
-    background-color: rgb(40, 40, 40);
-}
-
-.s4 {
-    background-color: rgb(40, 40, 40);
-} */
-
-span {
-    background: rgb(115, 115, 115) !important;
-}
-  
-
 body #fp-nav ul li,
 body .fp-slidesNav ul li {
     margin-top: 67px; /* Adds 10px margin to the top of each item */
     margin-bottom: 67px;
     margin-right: 50px;
 }
-
-
 
 /* style for navigation link on hover */
 body #fp-nav ul li:hover a span,
@@ -135,6 +130,7 @@ body #fp-nav ul li a span,
 body .fp-slidesNav ul li a span {
     height: 80px; /* New height */
     width: 6px; /* New width */
+    background: rgb(115, 115, 115);
     border-radius: 0;
     margin: -40px 0 0 -3px; /* Adjust margin for new size (half of width/height) */
 }
@@ -149,4 +145,131 @@ body .fp-slidesNav ul li:hover a.active span {
     border-radius: 5%;
     margin: -26px 0 0 -5px; /* Adjust margin for new active size (half of width/height) */
     background: rgb(255, 238, 0) !important; /* active color */
+}
+
+
+.skills-container {
+    color: #fff; /* Text color */
+    background-color: #000; 
+    padding: 40px; /* Section padding */
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+    gap: 20%; 
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 200;
+
+}
+
+.skills-container h3 {
+    font-size: 3vw;
+}
+
+.skills-container p {
+    font-size: 2vw;
+}
+
+h2{
+    padding: 80px;
+}
+
+.skills-category {
+    display: flex; /* This will create a flex container */
+    flex-direction: column; /* This will stack child elements in a column */
+    margin-bottom: 20px; /* Spacing between each category */
+}
+  
+.skills-category h3 {
+    margin-bottom: 0.5em; /* Spacing below each subheading */
+}
+
+
+.skills-category {
+    display: grid; /* This will create a flex container */
+    flex-direction: column; /* This will stack child elements in a column */
+    margin-bottom: 20px; /* Spacing between each category */
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill span {
+    font-family: AvenirNext-Regular,sans-serif;
+    align-self: center;
+}
+
+
+.skills-category h3 {
+    margin-bottom: 0.5em; /* Spacing below each subheading */
+}
+
+.skills-category p {
+    align-items: flex-start;
+} 
+
+#section3 p, #section4 p, #section5 p {
+    padding: 120px;
+}
+
+.skills-on-the-right {
+    width: 30%;
+}
+
+.skills-on-the-left {
+    width: 30%;
+}
+
+.skills-on-the-left span {
+    
+    font-size: 2vw;
+}
+
+.skills-on-the-right span {
+    font-size: 1.5vw;
+}
+
+.skills-category.tools {
+    margin-bottom: 40px; 
+}
+
+.resume-download {
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: AvenirNext-Regular,sans-serif;
+    font-size: 2vw;
+}
+.resume-download:hover {
+    color: brown;
+}
+
+.header-with-link {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+}
+
+
+#section2 h2 {
+    margin-left: 60px;
+}
+
+
+body #resume-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+
+#resume-section h2 {
+    padding: 20px;
+}
+
+#resume-content {
+    text-align: center;
 }
