@@ -6,9 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
     <link rel="stylesheet" href="screen.css">
+
+    <!-- link the font i want to use -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" integrity="sha512-otONSJGv1l0LjJXcgyqi2MeKXtnthkiXAleeQjFJOKYcVD5u+mOuPb7xCnlsb74Ld+N0ONbP7KYRmW2/OWrvaA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
   </head>
   <body>
-    <h1>Heading</h1>
-    <script src="index.js"></script>
+	
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#section1">About me</a></li>
+          <li><a href="#section2">Skills</a></li>
+          <li><a href="#section3">Resume</a></li>
+          <li><a href="#section4">Hobbies</a></li>
+          <li><a href="#section5">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <div id="fullPage">
+
+  	<div class ="section" id="section1">
+		
+		<h1>Palina Skakun</h1>
+		<div class="content-container">
+
+			<img src="images/palina.jpg" alt="Image of Palina Skakun" class="main-circular-image">
+
+			<div class="content-text">
+				3rd year CS student @ msu ... 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+	<section>
+		<h2>Skills</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+	  </section>
+
+	</div>
+  
+	<div class="section" id="section3">
+	<section>
+	  <h2>Resume</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+  
+	</section>
+	</div>
+
+	<div class="section" id="section4">
+		<section>
+		  <h2>Hobbies</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+	  
+		</section>
+	</div>
+
+	<div class="section" id="section5">
+		<section>
+		  <h2>Contact</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+	  
+		</section>
+	</div>
+
+</div>
+
+  <script src="index.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" integrity="sha512-LGiXf+jHGTHcIybSsOWO3I/in+OObCkcEsWIZ7IyhzfD6RzD5qDUw2CK+JveuI7zTSEcDG//bIOvOpAJW2BWsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+
+
+	new fullpage('#fullPage',{
+		autoscrolling: true,
+		navigation: true,
+		scrollingSpeed: 700,
+		navigationTooltips: ['About me', 'Skills', 'Resume', 'Hobbies', 'Contact'],
+
+	});
+	// Add smooth scrolling for header navigation links
+	document.querySelectorAll('header nav ul li a').forEach((link, index) => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor behavior
+
+            // Using index + 1 since fullpage.js sections are 1-indexed
+            fullpage_api.moveTo(index + 1);
+        });
+      });
+
+
+		</script>
   </body>
 </html>
