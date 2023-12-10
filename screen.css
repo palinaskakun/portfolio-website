@@ -484,3 +484,7 @@ h4 {
     text-align: center;
     ;
 }
+
+.gh-round-image {
+    border-radius: 50%;
+}
