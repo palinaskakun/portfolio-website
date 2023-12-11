@@ -1,2 +1,1 @@
-# boilerplate
-Basic HTML and CSS setup for simple web design
+MI 349 Final project - Portfolio website 
