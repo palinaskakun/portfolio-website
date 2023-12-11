@@ -273,7 +273,7 @@ body #resume-section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 0;
+    
 }
 
 #resume-section h2 {
@@ -286,22 +286,31 @@ body #resume-section {
 
 #resume-content {
     text-align: center;
+    padding: 10px;
 }
 
 .button-style {
     background-color: #5e5454;
     color: white;
     font-size: 1.2em;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 200;
     padding: 10px 20px;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+
+    border: none;
     border-radius: 5px;
     cursor: pointer;  
     transition: 0.3s; 
+    text-decoration: none;
+
   }
   
-  .button-style:hover {
+.button-style:hover {
     background-color: rgb(194, 194, 194);
     color: black;
-  }
+}
   
 #section3 h3 {
     padding: 20px;
@@ -397,7 +406,6 @@ h4 {
     color: white;
     font-size: 1.5em;
 }
-
 
 
 /* This is from formspree.io (all code below) */
@@ -653,6 +661,10 @@ h4 {
     .clubs {
         flex-direction: column; 
         align-items: center; 
+        
+    }
+    .club {
+        padding: 0;
     }
 
     .map-and-clubs {
