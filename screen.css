@@ -143,8 +143,8 @@ body #fp-nav ul li a.active span,
 body .fp-slidesNav ul li a.active span,
 body #fp-nav ul li:hover a.active span,
 body .fp-slidesNav ul li:hover a.active span {
-    height: 52px; /* New active height */
-    width: 10px; /* New active width */
+    height: 52px; 
+    width: 10px; 
     border-radius: 5%;
     margin: -26px 0 0 -5px; /* Adjust margin for new active size (half of width/height) */
     background: rgb(255, 238, 0) !important; /* active color */
@@ -179,7 +179,7 @@ h2{
 .skills-category {
     display: flex; /* This will create a flex container */
     flex-direction: column; /* This will stack child elements in a column */
-    margin-bottom: 20px; /* Spacing between each category */
+    margin-bottom: 20px; 
 }
   
 .skills-category h3 {
@@ -330,21 +330,21 @@ h4 {
 }
 
 .timeline-date {
-    width: calc(35% - 35px); /* Adjust the width of the date column */
+    width: calc(35% - 35px); 
     text-align: right;
     padding-right: 25px; /* Spacing between date and the line */
     color: white;
 }
 
 .timeline-content {
-    width: calc(65% - 35px); /* Adjust the width of the content column */
+    width: calc(65% - 35px);
     padding-left: 45px; /* Spacing between line and the content */
 }
 
 .timeline-dot {
     position: absolute;
-    left: calc(35% - 16.5px); /* Left position should match the line's position */
-    top: 10px; /* Adjust this value to move the dot down */
+    left: calc(35% - 16.5px); 
+    top: 10px; 
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -366,7 +366,7 @@ h4 {
     z-index: 1;
 }
 
-/* Ensure the title and other content are above the line */
+
 .timeline-title, .timeline-description {
     position: relative;
     z-index: 3;
@@ -478,16 +478,16 @@ h4 {
 }
 
 #fs-frm {
-    max-width: 500px; /* Adjust this value to make the form smaller */
+    max-width: 500px; 
     margin: auto; /* Center the form */
-    padding-right: 20px; /* Adds padding to the right */
+    padding-right: 20px; 
 }
 
 /* Add hover style for the submit button */
 #fs-frm [type="submit"]:hover {
     background-color: rgb(72, 72, 72);
     color: white;
-    border: 1px solid /* your desired border color on hover */;
+    border: 1px solid 
   }
   
 
@@ -507,6 +507,10 @@ h4 {
 #section4 {
     padding: 80px 0;
     color: white;
+}
+
+#section4 h2 { 
+    margin-bottom: 10px;
 }
 
 
@@ -539,15 +543,15 @@ h4 {
 
 .map-and-clubs {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px; 
 }
 
 .map-image {
-    width: 100%; 
+    width: 80%; 
     border-radius: 10%;
-    max-width: 600px; 
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .club {
@@ -575,7 +579,7 @@ h4 {
     white-space: nowrap;
 }
   
-/* Add the styles for the icons section */
+
 .hobbies-icons {
     display: flex;
     justify-content: space-between;
@@ -587,51 +591,49 @@ h4 {
     width: 80px; 
 }
 
-/* Draw connecting lines between icons */
 .hobbies-icons::before {
     content: '';
     display: block;
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: white; /* Line color */
-    top: 50%; /* Position the line vertically at the center of the icon container */
+    background-color: white; 
+    top: 50%; 
     z-index: -1;
 }
 
-/* Draw lines between individual icons */
 .hobbies-icons img + img::before {
     content: '';
     display: block;
     position: absolute;
-    width: 20px; /* Adjust the line length as needed */
+    width: 20px; 
     height: 1px;
-    background-color: white; /* Line color */
-    top: 50%; /* Position the line vertically at the center of the icon container */
-    left: calc(50% + 20px); /* Adjust the line position based on icon size and spacing */
+    background-color: white; 
+    top: 50%; 
+    left: calc(50% + 20px);
     z-index: -1;
 }
 
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 6vw; /* Smaller font size for h1 on smaller screens */
+        font-size: 6vw; 
     }
     .content-text {
-        font-size: 2vw; /* Smaller font size for content text */
+        font-size: 2vw; /
     }
     .timeline-description {
         font-size: 2vw;
         margin-right: 0 !important;
     }
     .main-circular-image {
-        width: 40%; /* Adjust image size */
+        width: 40%; 
     }
     .skills-container {
         flex-direction: column; /* Stack skill containers vertically */
     }
     .skills-on-the-left, .skills-on-the-right {
-        width: 60%; /* Full width for skill sections */
+        width: 60%; 
     }
     .map-image {
         width: 80%;
@@ -640,7 +642,7 @@ h4 {
         font-size: 2vw ;
     }
     nav li {
-        margin: 10px 0; /* Adjust margin for stacked items */
+        margin: 10px 0;
     }
 
     .club img {
@@ -658,7 +660,11 @@ h4 {
     }
 
     .hobbies-icons img {
-        width: 50px; 
+        width: 30%; 
+    }
+
+    #section2 h2 {
+        margin-left: 140px;
     }
 
 }
