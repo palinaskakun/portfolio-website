@@ -122,20 +122,20 @@ body .fp-slidesNav ul li {
 body #fp-nav ul li:hover a span,
 body .fp-slidesNav ul li:hover a span {
     height: 80px;
-    width: 10px;
-    background: rgb(255, 238, 0) !important; /* hover color */
+    width: 4px;
+    background: rgb(255, 0, 225) !important; /* hover color */
     border-radius: 5%;
-    margin: -40px 0 0 -5px;
+    margin: -40px 0 0 -2px;
 }
 
 /* Adjusting the size of the navigation circles */
 body #fp-nav ul li a span,
 body .fp-slidesNav ul li a span {
     height: 80px; /* New height */
-    width: 6px; /* New width */
-    background: rgb(115, 115, 115);
+    width: 2px; /* New width */
+    background: rgb(255, 255, 255);
     border-radius: 0;
-    margin: -40px 0 0 -3px; /* Adjust margin for new size (half of width/height) */
+    margin: -40px 0 0 -1px; /* Adjust margin for new size (half of width/height) */
 }
 
 /* Adjusting the size of the active navigation circles */
