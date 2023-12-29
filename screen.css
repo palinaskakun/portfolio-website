@@ -122,10 +122,10 @@ body .fp-slidesNav ul li {
 body #fp-nav ul li:hover a span,
 body .fp-slidesNav ul li:hover a span {
     height: 80px;
-    width: 4px;
-    background: rgb(255, 0, 225) !important; /* hover color */
+    width: 2px;
+    background: rgb(236, 40, 213) !important; /* hover color */
     border-radius: 5%;
-    margin: -40px 0 0 -2px;
+    margin: -40px 0 0 -1px;
 }
 
 /* Adjusting the size of the navigation circles */
@@ -144,10 +144,10 @@ body .fp-slidesNav ul li a.active span,
 body #fp-nav ul li:hover a.active span,
 body .fp-slidesNav ul li:hover a.active span {
     height: 52px; 
-    width: 10px; 
+    width: 2px; 
     border-radius: 5%;
-    margin: -26px 0 0 -5px; /* Adjust margin for new active size (half of width/height) */
-    background: rgb(255, 238, 0) !important; /* active color */
+    margin: -26px 0 0 -1px; /* Adjust margin for new active size (half of width/height) */
+    background: rgb(236, 40, 213) !important; /* active color */
 }
 
 
