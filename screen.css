@@ -357,7 +357,7 @@ h4 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #ffde05; /* Dot color */
+    background: rgb(220, 40, 236); /* Dot color */
     border: 3px solid #fff; /* Dot border color */
     z-index: 2;
 }
