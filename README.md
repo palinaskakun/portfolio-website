@@ -12,7 +12,13 @@ Welcome to my personal portfolio website! This repository contains the source co
 ## Introduction
 The website is built using HTML, CSS, and JavaScript. It utilizes Bootstrap for styling and FullPage.js for creating a smooth, interactive scrolling experience. The font used is League Spartan, and you can find the link to it in the head section of the HTML.
 
-## Website Demo
+## Video Walkthrough
+
+Here's a walkthrough of implemented features:
+
+<img src='images/demo.gif' />
+
+GIF created with FreeConvert https://www.freeconvert.com
 
 ### Navigation
 The website has a navigation bar that allows you to jump to different sections:
