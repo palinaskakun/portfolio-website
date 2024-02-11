@@ -8,6 +8,10 @@ body, h1, h2, h3, p, ul, li {
 
 /* HEADER NAVIGATION SECTION STYLING  */
 
+.fp-watermark {
+    display: none;
+}
+
 header {
     position: fixed;
     top: 0;
